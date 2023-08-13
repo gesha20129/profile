@@ -1,0 +1,182 @@
+/* Created By: Wiliamz
+*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  user-select: none;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #111222;
+}
+
+.container,
+.container .img_main,
+.social-icons a,
+.btn button{
+  background: rgba(0,0,0,0.2);
+}
+
+.container{
+  position: relative;
+  padding: 30px;
+  width: 350px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container .icon{
+  font-size: 17px;
+  color: #ffffff;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0.7;
+  top: 15px;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 50%;
+  font-size: 16px;
+}
+
+.container .icon i{
+  position: relative;
+  z-index: 9;
+}
+
+.container .icon.arrow{
+  left: 15px;
+}
+
+.container .icon.dots{
+  right: 15px;
+}
+
+.container .img_main{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img_main .img_inner{
+  height: calc(100% - 30px);
+  width: calc(100% - 30px);
+  border-radius: 50%;
+}
+
+.img_inner img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.container .name{
+  font-size: 23px;
+  font-weight: 500;
+  color: #b3b7d4;
+  margin: 10px 0 5px 0;
+}
+
+.container .work{
+  color: #9d9da7;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.container .social-icons{
+  margin: 15px 0 25px 0;
+}
+
+.social-icons a{
+  position: relative;
+  height: 40px;
+  width: 40px;
+  margin: 0 5px;
+  display: inline-flex;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.social-icons a:hover::before,
+.container .icon:hover::before,
+.btn button:hover:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  background: rgba(0, 0, 0,0.25);
+}
+
+.btn button:hover:before{
+  z-index: -1;
+  border-radius: 5px;
+}
+
+.social-icons a i{
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+}
+
+.social-icons a.facebook i{
+  color: #4267B2;
+}
+.social-icons a.github i{
+  color: #a09e9e;
+}
+.social-icons a.instagram i{
+  color: #E1306C;
+}
+.social-icons a.twitter i{
+  color: #1DA1F2;
+}
+
+.container .btn{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.btn button{
+  position: relative;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 12px 0;
+  color: #c7c7c7;
+  font-size: 17px;
+  font-weight: 400;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 4;
+  letter-spacing: 1.5px;
+}
+.btn button:nth-child(1){
+  margin-right: 10px;
+}
+.btn button:nth-child(1){
+  margin-left: 10px;
+}
+/*
+    <<<----------THE END---------->>>
+*/
